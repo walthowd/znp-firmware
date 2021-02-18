@@ -19,8 +19,4 @@ RUN cd /opt/firmware && git clone https://github.com/Koenkk/Z-Stack-firmware
 
 RUN cd /opt/firmware/Z-Stack-firmware/coordinator/Z-Stack_3.x.0/bin && ls -1 *.zip | xargs -I {} unzip {} && rm -rf *.zip && rm -rf __MACOSX && mv *.hex /opt/firmware
 
-#ADD update-firmware.sh /tmp/silabs
-#ADD ncp.py /tmp/silabs
-#ADD *.ebl /tmp/silabs/
-
-#CMD /tmp/silabs/update-firmware.sh
+CMD bash && cd /opt/firmware 

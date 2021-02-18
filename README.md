@@ -13,7 +13,7 @@ Backup your current TI radio:
 
 Find the correct coordinator firmware for your adapter by consulting the [ZStack firmware README](https://github.com/Koenkk/Z-Stack-firmware/blob/master/coordinator/Z-Stack_3.x.0/bin/README.md)
 
-Put your adapter in flashing mode and then ppgrade:
+Put your adapter in flashing mode and then upgrade:
 
 `/opt/firmware/cc2538-bsl.py -p /dev/ttyACM0 -evw /opt/firmware/CORRECT-FIRMWARE.bn`
 
